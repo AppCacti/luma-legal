@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support & FAQ · Luma</title>
+  <style>
+    :root {
+      --pink: #c96a8b;
+      --light-pink: #fbe9ec;
+      --dark: #2a1f2e;
+      --muted: #7a6a7e;
+      --border: #f0d0d8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #fff;
+      color: var(--dark);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    header {
+      background: var(--light-pink);
+      padding: 24px 24px 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-style: italic;
+      font-size: 32px;
+      color: var(--pink);
+      letter-spacing: -0.5px;
+      display: block;
+      margin-bottom: 6px;
+    }
+    header p { font-size: 13px; color: var(--muted); }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 36px 24px 60px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+    .contact-card {
+      background: var(--light-pink);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 36px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .contact-card .icon { font-size: 28px; }
+    .contact-card h3 { font-size: 15px; font-weight: 600; margin-bottom: 2px; }
+    .contact-card p { font-size: 14px; color: var(--muted); margin: 0; }
+    .contact-card a { color: var(--pink); font-weight: 500; }
+    h2 {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--dark);
+      margin-top: 36px;
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    details {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 14px 18px;
+      font-weight: 500;
+      font-size: 15px;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--dark);
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '+';
+      font-size: 20px;
+      font-weight: 300;
+      color: var(--pink);
+      transition: transform 0.2s;
+    }
+    details[open] summary::after { content: '−'; }
+    details[open] { border-color: var(--pink); }
+    details[open] summary { color: var(--pink); }
+    .answer {
+      padding: 0 18px 16px;
+      font-size: 15px;
+      color: #3a2e3e;
+      line-height: 1.6;
+    }
+    .answer p { margin-bottom: 10px; }
+    .answer p:last-child { margin-bottom: 0; }
+    a { color: var(--pink); text-decoration: none; }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="logo">luma</span>
+    <p>A quiet companion for every 3 AM moment</p>
+  </header>
+
+  <main>
+    <h1>Support & FAQ</h1>
+    <p class="subtitle">We're here to help — especially at 3 AM.</p>
+
+    <div class="contact-card">
+      <div class="icon">✉️</div>
+      <div>
+        <h3>Get in touch</h3>
+        <p>Email us anytime at <a href="mailto:empire@tan.wiki">empire@tan.wiki</a> — we typically reply within 24 hours.</p>
+      </div>
+    </div>
+
+    <h2>Getting Started</h2>
+
+    <details>
+      <summary>How do I log a feed?</summary>
+      <div class="answer">
+        <p>Tap the left or right breast button on the main screen to start a timer. Tap it again to stop — the session is saved automatically with the time, side, and duration.</p>
+        <p>For bottle or pump sessions, tap the Bottle/Pump tab at the bottom of the screen.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Do I need to create an account?</summary>
+      <div class="answer">
+        <p>No account is required. Luma works fully as a guest — all your data is stored locally on your device.</p>
+        <p>Optional: tap Settings → Sign In with Apple if you want to link an account (useful for account deletion or future sync features).</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Where is my data stored?</summary>
+      <div class="answer">
+        <p>All feeding logs are stored <strong>locally on your iPhone</strong>. Nothing is sent to any server unless you sign in with Apple (which only shares your account ID, not your feeding data).</p>
+      </div>
+    </details>
+
+    <h2>Apple Watch</h2>
+
+    <details>
+      <summary>How do I use Luma on Apple Watch?</summary>
+      <div class="answer">
+        <p>Install the Luma Watch app from the Watch app on your iPhone. Once installed, open Luma on your Watch and use the same left/right tap to log sessions.</p>
+        <p>Data syncs directly between your iPhone and Watch — no internet connection needed.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>The Watch app isn't syncing — what do I do?</summary>
+      <div class="answer">
+        <p>Make sure both apps are open. Watch Connectivity works best when both the iPhone and Watch apps are in the foreground. Try force-quitting and reopening both apps if sync seems stuck.</p>
+      </div>
+    </details>
+
+    <h2>Subscriptions & Luma Pro</h2>
+
+    <details>
+      <summary>What's included in Luma Pro?</summary>
+      <div class="answer">
+        <p>Luma Pro unlocks detailed history charts, advanced insights, custom reminders, and the Breastfeeding Guide. The free version includes unlimited feed logging.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I cancel my subscription?</summary>
+      <div class="answer">
+        <p>Go to your iPhone's <strong>Settings → Apple ID → Subscriptions</strong>, find Luma, and tap Cancel Subscription. Cancellation takes effect at the end of the current billing period.</p>
+        <p>You cannot cancel through the app itself — this is managed by Apple.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>I paid for Pro but it's not showing — how do I restore?</summary>
+      <div class="answer">
+        <p>Tap the <strong>Restore Purchases</strong> button on the Luma Pro paywall screen. Make sure you're signed in with the same Apple ID you used to purchase.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Can I get a refund?</summary>
+      <div class="answer">
+        <p>Refunds are handled by Apple. Visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> to request a refund on your purchase.</p>
+      </div>
+    </details>
+
+    <h2>Privacy & Data</h2>
+
+    <details>
+      <summary>How do I delete my account and data?</summary>
+      <div class="answer">
+        <p>Go to <strong>Settings → Delete Account</strong> in the app. This permanently removes your account from our servers.</p>
+        <p>To delete your locally stored feeding logs, tap <strong>Settings → Delete All Data</strong>.</p>
+        <p>You can also email us at <a href="mailto:empire@tan.wiki">empire@tan.wiki</a> to request manual deletion.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Do you share my data with anyone?</summary>
+      <div class="answer">
+        <p>No. We never sell or share your feeding data. See our full <a href="luma-privacy.html">Privacy Policy</a> for details.</p>
+      </div>
+    </details>
+
+    <h2>Troubleshooting</h2>
+
+    <details>
+      <summary>The app crashed or something isn't working</summary>
+      <div class="answer">
+        <p>Try force-quitting the app and reopening it. If the issue persists, go to Settings → General → iPhone Storage → Luma, then offload and reinstall the app (your data is preserved).</p>
+        <p>If it's still broken, email us at <a href="mailto:empire@tan.wiki">empire@tan.wiki</a> with a description of what happened and what device/iOS version you're on.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>I forgot to stop a timer — can I edit it?</summary>
+      <div class="answer">
+        <p>Yes — tap on any session in your History to edit the start time, end time, and side. Changes are saved immediately.</p>
+      </div>
+    </details>
+  </main>
+
+  <footer>
+    &copy; 2026 Luma · <a href="luma-privacy.html">Privacy Policy</a> · <a href="luma-terms.html">Terms of Use</a>
+  </footer>
+</body>
+</html>
