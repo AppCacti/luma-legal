@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy · Luma</title>
+  <style>
+    :root {
+      --pink: #c96a8b;
+      --light-pink: #fbe9ec;
+      --dark: #2a1f2e;
+      --muted: #7a6a7e;
+      --border: #f0d0d8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #fff;
+      color: var(--dark);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    header {
+      background: var(--light-pink);
+      padding: 24px 24px 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-style: italic;
+      font-size: 32px;
+      color: var(--pink);
+      letter-spacing: -0.5px;
+      display: block;
+      margin-bottom: 6px;
+    }
+    header p {
+      font-size: 13px;
+      color: var(--muted);
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 36px 24px 60px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 6px;
+    }
+    .last-updated {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--dark);
+      margin-top: 32px;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    p { margin-bottom: 14px; color: #3a2e3e; }
+    ul {
+      margin: 10px 0 14px 20px;
+      color: #3a2e3e;
+    }
+    ul li { margin-bottom: 6px; }
+    a { color: var(--pink); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .callout {
+      background: var(--light-pink);
+      border-left: 3px solid var(--pink);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 20px 0;
+      font-size: 15px;
+      color: var(--dark);
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="logo">luma</span>
+    <p>A quiet companion for every 3 AM moment</p>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last updated: April 22, 2026</p>
+
+    <div class="callout">
+      Luma is built for tired parents. We collect only what's needed to make the app work — and we never sell your data.
+    </div>
+
+    <h2>1. What We Collect</h2>
+    <p>Luma is designed to be privacy-first. Here's what the app collects:</p>
+    <ul>
+      <li><strong>Feeding logs</strong> — session start/end times, side (left/right breast), bottle amounts, and pump data. Stored locally on your device.</li>
+      <li><strong>Apple Sign In (optional)</strong> — if you choose to sign in, we receive a unique user ID and optionally your name and email address from Apple. This is used solely to associate your data with your account for backup/restore.</li>
+      <li><strong>Purchase data</strong> — managed by RevenueCat and Apple. We receive confirmation of your subscription status but never see your payment details.</li>
+      <li><strong>Crash and diagnostic data</strong> — if you opt in through iOS, Apple may share anonymised crash reports with us to help fix bugs.</li>
+    </ul>
+
+    <h2>2. What We Don't Collect</h2>
+    <ul>
+      <li>We do not collect health data or share it with third parties.</li>
+      <li>We do not track your location.</li>
+      <li>We do not use advertising SDKs or sell your data to advertisers.</li>
+      <li>We do not share your feeding logs with anyone.</li>
+    </ul>
+
+    <h2>3. How Your Data Is Stored</h2>
+    <p>All feeding logs are stored <strong>locally on your device</strong> using iOS secure storage. They are not uploaded to any server unless you enable iCloud Sync (if available) in your device settings.</p>
+    <p>If you use Apple Sign In, your user ID is stored in Supabase (our optional backend) solely to enable account management features like deleting your account. No feeding data is sent to Supabase.</p>
+
+    <h2>4. Apple Watch Sync</h2>
+    <p>If you use the Luma Apple Watch app, data syncs directly between your iPhone and Watch using Apple's WatchConnectivity framework. This is a local, device-to-device connection — no data passes through any server.</p>
+
+    <h2>5. Third-Party Services</h2>
+    <ul>
+      <li><strong>RevenueCat</strong> — manages subscription status and purchase validation. <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a></li>
+      <li><strong>Supabase</strong> — optional backend used only for Apple Sign In account management. <a href="https://supabase.com/privacy">Supabase Privacy Policy</a></li>
+      <li><strong>Apple StoreKit</strong> — handles all payment processing. Apple's privacy policy governs payment data.</li>
+    </ul>
+
+    <h2>6. Children's Privacy</h2>
+    <p>Luma is intended for parents and caregivers aged 17 and over. We do not knowingly collect data from children under 13.</p>
+
+    <h2>7. Data Deletion</h2>
+    <p>You can delete all your data at any time:</p>
+    <ul>
+      <li><strong>Feeding logs</strong> — tap Settings → Delete All Data in the app.</li>
+      <li><strong>Your account</strong> — tap Settings → Delete Account. This permanently removes your account from our servers.</li>
+      <li><strong>To request manual deletion</strong> — email us at <a href="mailto:empire@tan.wiki">empire@tan.wiki</a></li>
+    </ul>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>If we make material changes, we'll notify you through the app or via email (if you've signed in). Continued use of Luma after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>9. Contact</h2>
+    <p>Questions about privacy? We're happy to help:</p>
+    <p><a href="mailto:empire@tan.wiki">empire@tan.wiki</a></p>
+  </main>
+
+  <footer>
+    &copy; 2026 Luma · <a href="luma-terms.html">Terms of Use</a> · <a href="luma-support.html">Support</a>
+  </footer>
+</body>
+</html>
